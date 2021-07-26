@@ -88,7 +88,7 @@ def admin_session(request, harvester_api_endpoints):
     password = request.config.getoption('--password')
 
     # set admin password if needed
-    _set_admin_password(harvester_api_endpoints, password)
+    #_set_admin_password(harvester_api_endpoints, password)
 
     # authenticate admin
     login_data = {'username': username, 'password': password}
